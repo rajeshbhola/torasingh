@@ -139,7 +139,7 @@ div.gallery {
 @media all and (max-width: 500px) {
   .header {
     font-size: 4em;
-    margin-left: -60px;
+    margin-left: -20px;
   }
   
 }
