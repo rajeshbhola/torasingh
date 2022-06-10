@@ -128,3 +128,17 @@ div.gallery {
     font-weight: normal;
     font-size: 20px;
   }
+
+  /* For mobile phones: */
+@media all and (max-width: 767px) {
+  .header {
+    font-size: 2em;
+  }
+  
+}
+@media all and (max-width: 500px) {
+  .header {
+    font-size: 3em;
+  }
+  
+}
