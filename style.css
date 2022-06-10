@@ -132,13 +132,14 @@ div.gallery {
   /* For mobile phones: */
 @media all and (max-width: 767px) {
   .header {
-    font-size: 2em;
+    font-size: 5em;
   }
   
 }
 @media all and (max-width: 500px) {
   .header {
-    font-size: 3em;
+    font-size: 4em;
+    margin-left: -65px;
   }
   
 }
