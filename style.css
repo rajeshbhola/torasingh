@@ -144,3 +144,9 @@ div.gallery {
   }
   
 }
+
+.card.horizontal .card-image img {
+  border-radius: 11px 11px 11px 11px;
+  max-width: 100%;
+  width: 110px;
+}
