@@ -142,6 +142,11 @@ div.gallery {
     margin-left: -20px;
     text-align: center;
   }
+  video {
+    width: 370px;
+    height: 330px;
+    margin-left: 7px;
+  }
   
 }
 
