@@ -35,6 +35,9 @@ nav {
     width: 1400px;
     height: auto;
 }
+.text-color {
+    color: #6a1b9a;
+}
 .page-footer {
     margin: 0;
     padding: 20;
