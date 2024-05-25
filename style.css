@@ -17,9 +17,9 @@ nav {
 }
 .card-panel {
     transition: box-shadow .25s;
-    padding: 130px;
+    padding-top: 50px;
     margin: 0;
-    height: 500px;
+    height: 360px;
     border-radius: 2px;
     
     background: linear-gradient(to right, #a044ff, #6a3093); 
