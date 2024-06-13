@@ -26,7 +26,13 @@ nav {
 }
 .header {
     text-align: center;
-    color: rgb(255, 230, 1);
+    color: rgb(228, 223, 230);
+    font-family: "Audiowide", sans-serif;
+    font-size: 100px;
+}
+.header1 {
+    text-align: center;
+    color: rgb(158, 7, 233);
     font-family: "Audiowide", sans-serif;
     font-size: 100px;
 }
@@ -55,7 +61,7 @@ nav {
     font-size: 20px;
 }
 .color {
-    background-color: #ebe8d0;
+    background-color: #eecff6;
 }
 .card-image img {
     width: 400px;
@@ -160,4 +166,23 @@ div.gallery {
   border-radius: 11px 11px 11px 11px;
   max-width: 100%;
   width: 110px;
+}
+
+.styled-div {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #eeebeb;
+  background: linear-gradient(90deg, rgb(152, 5, 251) 0%, rgb(67, 7, 99) 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: auto;
+  box-sizing: border-box;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #4240ff;
+  margin-right: 24px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  text-transform: uppercase;
 }
