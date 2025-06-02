@@ -1,138 +1,557 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-        <title>Torasingh Rock Star</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-    
-        <script>
-          $(document).ready(function () {
-            $(".button-collapse").sideNav();
-          });
-        </script>
-    </head>
-    <body>
-       <div class="navbar-fixed">
-          <nav>
-              <div class="nav-wrapper">
-                 <a href="index.html"><img class="brand-logo" src="img/tiger.png" alt="" /></a>
-                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                 <ul class="right hide-on-med-and-down">
-                    <li class="active"><a  href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="festivals.html">Festivals</a></li>
-                    <li><a href="jatra.html">Jatra</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                </ul>
-             </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ତୋରସିଂହ | Torasingh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Yatra One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header
+      class="fixed top-0 w-full bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 shadow-md z-50"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <a href="index.html">
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <i class="fa-solid fa-dragon text-white text-3xl"></i>
+              </div>
+              <h1 class="text-xl font-bold ml-3 text-white">ତୋରସିଂହ</h1>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="#hero"
+              class="text-white hover:text-primary font-medium nav-item nav-active"
+              >ଘର</a
+            >
+            <a
+              href="#festivals"
+              class="text-white hover:text-primary font-medium nav-item"
+              >ଜାତ୍ରା ଓ ପର୍ବ</a
+            >
+
+            <a
+              href="#drama-people"
+              class="text-white hover:text-primary font-medium nav-item"
+              >କଳାକାର</a
+            >
+            <a
+              href="#gallery"
+              class="text-white hover:text-primary font-medium nav-item"
+              >ଗ୍ୟାଲେରୀ</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:text-primary font-medium nav-item"
+              >ଗାଁ ବିଷୟରେ</a
+            >
           </nav>
-       </div>
-       <ul class="side-nav" id="mobile-demo">
-        <li class="active"><a  href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="festivals.html">Festivals</a></li>
-        <li><a href="jatra.html">Jatra</a></li>
-        <li><a href="videos.html">Videos</a></li>
-      </ul>
 
-
-      <div class="card-panel darken-4 col-md-6 col-sm-12">
-          <h1 class="header">ତୋରସିଂହ</h1>
-          <h1 class="header">Rock Star</h1>
-      </div><br>
-
-      <h2><u>ନୂତନ ଖବର</u></h2><br>
-
-      <div class="container">
-      <div class="row">
-
-        <h4 class="mt-0 text-color"><b>👉 ରଜ ଉପଲକ୍ଷେ ଆସନ୍ତା 15.06.2024 ତାରିଖ (ଶନିବାର) ଦିନ</b></h4>
-
-        <div class="banner">
-          <img class="responsive-img" src="img/jatra_2024.jpg" alt="" /><!--width-1400 height-700 canva website-->
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden text-white">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
         </div>
-        
-        <br>
+      </div>
 
-        <h4 class="mt-0 text-color"><b>👉 ଦୁବାଇରୁ ଭାରତକୁ ଫେରିଥିବା ବ୍ୟକ୍ତି</b></h4>
-        <div class="col grid-example s12 m4 l3 lighten-1"><span class="flow-text">
-          <img class="responsive-img" src="img/pintu_bhai.jpg" alt="Generic placeholder image"
-            width="200">
-            <h4 class="mt-0 text-color"><b>ମନୋଜ ଚମ୍ପତି</b></h4>
-        </span></div>
-        <div class="col grid-example s12 m4 l6 lighten-1"><span class="flow-text">
-          ଦୁବାଇରୁ ଭାରତକୁ ଫେରିଥିବା ପାଇଁ ସ୍ବାଗତ ଜଣାଉଛୁଁ! ଆପଣଙ୍କୁ ନିଜ ଭୋଟ ଦିଆ ନିମନ୍ତେ ଫେରିଥିବାରେ ଆମେ ଖୁବ୍ ସୁଖିତ ଅଛୁଁ। ଗଣତାନ୍ତ୍ରିକ ପ୍ରକ୍ରିୟାରେ ଆପଣଙ୍କ ଅଙ୍ଗସ୍ଵୀକାର ପ୍ରଶଂସନୀୟ। ଆପଣଙ୍କ ଆବାଜ ଓ ଆପଣଙ୍କ ଭୋଟ ଆମ ଦେଶର ଭବିଷ୍ଯତ ଗଢ଼ିବାରେ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ। ଏହି ଯାତ୍ରାକୁ ସଫଳ କରିଥିବା ପାଇଁ ଧନ୍ୟବାଦ, ଓ ଆମେ ଆଶା କରୁଅଛୁଁ ଯେ ଆପଣଙ୍କ ସ୍ଥାନ ଆମ ଦେଶରେ ସୁଖମୟ ଓ ରୂଚିକର ହେବ। ସ୍ବାଗତ!
-          <p><br>ଧନ୍ୟବାଦ!</p>
-        </span></div>
-        <div class="col grid-example s12 m4 l3 lighten-1"><span class="flow-text">
-          <img class="responsive-img" src="img/hapi_bhola.jpg" alt="Generic placeholder image"
-            width="200">
-            <h4 class="mt-0 text-color"><b>ହାପି ଭୋଳ</b></h4>
-        </span></div>
-      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t py-4">
+        <div class="container mx-auto px-4 flex flex-col space-y-3">
+          <a
+            href="#hero"
+            class="text-gray-600 hover:text-primary font-medium py-2 nav-item nav-active"
+            >ଘର</a
+          >
+          <a
+            href="#festivals"
+            class="text-gray-600 hover:text-primary font-medium nav-item"
+            >ଜାତ୍ରା ଓ ପର୍ବ</a
+          >
+
+          <a
+            href="#drama-people"
+            class="text-gray-600 hover:text-primary font-medium py-2 nav-item"
+            >କଳାକାର</a
+          >
+          <a
+            href="#gallery"
+            class="text-gray-600 hover:text-primary font-medium py-2 nav-item"
+            >ଗ୍ୟାଲେରୀ</a
+          >
+          <a
+            href="about.html"
+            class="text-gray-600 hover:text-primary font-medium py-2 nav-item"
+            >ଗାଁ ବିଷୟରେ</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+      <!-- Hero Section -->
+      <section id="hero" class="hero-pattern py-10 md:py-16">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <span
+        class=" font-bold break-words text-5xl sm:text-6xl md:text-[100px] leading-tight"
+        style="
+          background: linear-gradient(90deg, #8b5fbf, #64acef);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        ତୋରସିଂହ
+      </span>
+      <hr class="my-2 border-2 border-[#8b5fbf] w-1/2 mx-auto" />
+      <span
+        class="block font-bold text-3xl sm:text-4xl md:text-[40px] mt-2"
+        style="
+          background: linear-gradient(90deg, #8b5fbf, #64acef);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        ରକ୍ ଷ୍ଟାର
+      </span>
+
+      <p class="text-lg sm:text-xl text-gray-600 my-6 px-2">
+        ଗାଁର ବିଭିନ୍ନ ସାଂସ୍କୃତିକ ପରମ୍ପରାର ପର୍ବ, କଳାକାର ଏବଂ ପ୍ରଦର୍ଶନ
+        ଆବିଷ୍କାର କରନ୍ତୁ।
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a
+          href="#festivals"
+          class="bg-purple-700 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center"
+        >
+          ଉତ୍ସବଗୁଡ଼ିକୁ ଏକ୍ସପ୍ଲୋର୍ କରନ୍ତୁ
+        </a>
+        <a
+          href="#drama-people"
+          class="bg-purple-700 hover:bg-purple-600 border border-gray-300 text-white font-medium py-3 px-8 rounded-lg transition duration-300"
+        >
+          କଳାକାରମାନଙ୍କୁ ଭେଟନ୍ତୁ
+        </a>
       </div>
     </div>
-      
+  </div>
+      </section>
 
-      <div class="banner">
-        <img class="responsive-img" src="img/ratha2.jpeg" alt="" /><!--width-1400 height-700 canva website-->
-      </div>
-
-      <div class="banner">
-        <img class="responsive-img" src="img/ratha3.jpeg" alt="" /><!--width-1400 height-700 canva website-->
-      </div>
-
-      <div class="banner">
-        <img class="responsive-img" src="img/ratha4.jpeg" alt="" /><!--width-1400 height-700 canva website-->
-      </div>
-
-      <div class="banner">
-        <img class="responsive-img" src="img/ratha8.jpeg" alt="" /><!--width-1400 height-700 canva website-->
-      </div>
-     
-
-      
-
+      <!--Latest News Section -->
+      <section id="latest-news" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+              ନବୀନତମ ଖବର
+            </h2>
+            <p class="text-gray-600 text-lg">
+              ଗାଁର ସାଂସ୍କୃତିକ ଘଟଣାବଳୀ ଓ ଖବର ଅନୁସରଣ କରନ୍ତୁ।
+            </p>
+            <hr class="my-4 border-2 border-[#8b5fbf] w-1/2 mx-auto" />
+            <div class="flex justify-center">
+<img
+  src="assets/images/jatra_2024.jpg"
+  alt="Latest News"
+  class="rounded-lg shadow-md w-full h-auto object-cover"
+/>
 
 
-      <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l12 s12">
-              <a href=""><img class="brand-logo responsive-img" src="img/tiger.png" alt="" /></a>
-              <h5 class="f-header">Torasingh Rock Star</h5><br>
-              <p class="grey-text text-lighten-4 f-para">
-                ଏହି ୱେବ୍ସାଇଟ ଟି ତିଆରି କରିବାର ଉଦ୍ଧେଶ୍ୟ ହେଲା ଆମ ଗ୍ରାମର ସବୁ ଖବର ଏବଂ ଯୁବପିଢିଙ୍କ ଭିତରେ ଶିକ୍ଷା କୁ ପ୍ରୋତ୍ସାହନ ଦବାପାଇଁ |
-                ଆପଣ ମାନେ ଆମ ଗ୍ରାମର ଉନ୍ନତି ପାଇଁ ଆଗେଇ ଆସନ୍ତୁ |  ଏହା  ଦ୍ୱାରା ଆମେ ଡିଜିଟାଲ ହେବା ଏବଂ ଏକ ଶ୍ରେଷ୍ଠ ଗ୍ରାମରେ ପରିଣତ ହେବା |
-                ଅନ୍ୟ ମାନକୁ ପ୍ରେରିତ କରିବା ଡିଜିଟାଲ ହେବାରେ |
-              </p><br>
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-            2022 | Copy &copy; Rights Reserved By | <span style="color:rgb(255, 230, 1)">ତୋରସିଂହ କ୍ଲବ </span> 
-          <a class="grey-text text-lighten-4 right" href="#!">Developed By | <span style="color:rgb(255, 230, 1)">ରାଜେଶ ଭୋଳ</span></a>
+      </section>
+
+      <!-- Festivals Section -->
+      <section id="festivals" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+              ପର୍ବ ଏବଂ ପ୍ରଦର୍ଶନ
+            </h2>
+          </div>
+
+          <!-- Video Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" ><div class="bg-white rounded-xl shadow-md overflow-hidden card-hover video-card" data-tags="konark 2024 odissi">
+                    <div class="relative video-thumbnail cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="ସଙ୍ଗୀତ ଚେୟାର ଖେଳ" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/20 backdrop-blur-sm rounded-full w-16 h-16 flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-dark mb-2">ସଙ୍ଗୀତ ଚେୟାର ଖେଳ</h3>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-primary text-xs px-2 py-1 rounded">#ରଜ ପର୍ବ</span>
+                            <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">#2024</span>
+                            <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded">#ଖେଳ</span>
+                        </div>
+                    </div>
+                </div><div class="bg-white rounded-xl shadow-md overflow-hidden card-hover video-card" data-tags="folk 2023 music">
+                    <div class="relative video-thumbnail cursor-pointer">
+                        <img src="assets/images/jatra_2024.jpg" alt="ଏ ଆଖି କାନ୍ଦୁଚି ତମରି ପାଇଁ" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/20 backdrop-blur-sm rounded-full w-16 h-16 flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-dark mb-2">ଏ ଆଖି କାନ୍ଦୁଚି ତମରି ପାଇଁ</h3>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-primary text-xs px-2 py-1 rounded">#ସାଂସ୍କୃତିକ ନାଟକ ମହୋତ୍ସବ</span>
+                            <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">#2024</span>
+                            <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded">#ନାଟକ</span>
+                        </div>
+                    </div>
+                </div><div class="bg-white rounded-xl shadow-md overflow-hidden card-hover video-card" data-tags="drama 2024 contemporary">
+                    <div class="relative video-thumbnail cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="ଆଧୁନିକ ନାଟକ: ନିଶ୍ବାଦ ଖେଳ" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/20 backdrop-blur-sm rounded-full w-16 h-16 flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-dark mb-2">ଆଧୁନିକ ଫ୍ୟାଶନ ଚାଲି</h3>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-primary text-xs px-2 py-1 rounded">#ରଜ ପର୍ବ</span>
+                            <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">#2024</span>
+                            <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded">#ନୃତ୍ୟ</span>
+                        </div>
+                    </div>
+                </div></div>
+
+          <div class="text-center mt-12">
+            <a href="videos.html" class="bg-purple-700 hover:bg-purple-600 border border-gray-300 text-white font-medium py-3 px-8 rounded-lg transition duration-300">
+              ସମସ୍ତ ଭିଡିଓ ଦେଖନ୍ତୁ
+            </a>
           </div>
         </div>
-      </footer>
+      </section>
 
+      <!-- Drama People Section -->
+      <section id="drama-people" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+              କଳାକାର ଏବଂ କଳାକାରମାନେ
+            </h2>
+          </div>
 
-      <script type="text/javascript" language="javascript">
-        $(document).ready(function() {
-            $(document).bind("contextmenu",function(e) {
-               return false;
+          <!-- Artists Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" ><div class="bg-white rounded-xl shadow-md p-6 text-center card-hover artist-card" data-role="ସଫ୍ଟୱେର୍ ଇଞ୍ଜିନିୟର" data-name="ରାଜେଶ ଭୋଳ">
+                    <div class="w-32 h-32 mx-auto mb-4">
+                        <img src="https://avatars.githubusercontent.com/u/82930824?v=4" alt="ରାଜେଶ ଭୋଳ" class="w-full h-full object-cover rounded-full border-4 border-primary/20">
+                    </div>
+                    <h3 class="font-bold text-xl text-dark mb-1">ରାଜେଶ ଭୋଳ</h3>
+                    <p class="font-medium mb-3 job">ସଫ୍ଟୱେର୍ ଇଞ୍ଜିନିୟର</p>
+                    
+                </div><div class="bg-white rounded-xl shadow-md p-6 text-center card-hover artist-card" data-role="ଯାତ୍ରା ପ୍ରେରକ" data-name="ମନୋଜ ଚମ୍ପତି">
+                    <div class="w-32 h-32 mx-auto mb-4">
+                        <img src="assets/images/pintu_bhai.jpg" alt="ମନୋଜ ଚମ୍ପତି" class="w-full h-full object-cover rounded-full border-4 border-primary/20">
+                    </div>
+                    <h3 class="font-bold text-xl text-dark mb-1">ମନୋଜ ଚମ୍ପତି</h3>
+                    <p class="font-medium mb-3 job">ଯାତ୍ରା ପ୍ରେରକ</p>
+                    
+                </div><div class="bg-white rounded-xl shadow-md p-6 text-center card-hover artist-card" data-role="ହିରୋ" data-name="ଟିକିନା ନନ୍ଦ">
+                    <div class="w-32 h-32 mx-auto mb-4">
+                        <img src="assets/images/tikina.png" alt="ଟିକିନା ନନ୍ଦ" class="w-full h-full object-cover rounded-full border-4 border-primary/20">
+                    </div>
+                    <h3 class="font-bold text-xl text-dark mb-1">ଟିକିନା ନନ୍ଦ</h3>
+                    <p class="font-medium mb-3 job">ହିରୋ</p>
+                    
+                </div><div class="bg-white rounded-xl shadow-md p-6 text-center card-hover artist-card" data-role="ସଙ୍ଗୀତକାର" data-name="ଭୀମା ନନ୍ଦ">
+                    <div class="w-32 h-32 mx-auto mb-4">
+                        <img src="assets/images/bhima.PNG" alt="ଭୀମା ନନ୍ଦ" class="w-full h-full object-cover rounded-full border-4 border-primary/20">
+                    </div>
+                    <h3 class="font-bold text-xl text-dark mb-1">ଭୀମା ନନ୍ଦ</h3>
+                    <p class="font-medium mb-3 job">ଗୁଣ୍ଡା ଭୂମିକା</p>
+
+                </div></div>
+
+          <div class="text-center mt-12">
+            <a href="artist.html" class="bg-purple-700 hover:bg-purple-600 border border-gray-300 text-white font-medium py-3 px-8 rounded-lg transition duration-300">
+              ସମସ୍ତ କଳାକାରଙ୍କୁ ଦେଖନ୍ତୁ
+            </a>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Image Gallery Section -->
+      <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+              ଫୋଟୋ ଗ୍ୟାଲେରୀ
+            </h2>
+          </div>
+
+          <!-- Masonry Gallery -->
+          <div class="masonry-grid">
+            <div
+              class="masonry-item relative group gallery-item"
+              data-theme="atmosphere"
+            >
+              <img
+                src="assets/images/1.jpg"
+                alt="ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା"
+                class="w-full rounded-lg shadow-md cursor-pointer"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+               
+              </div>
+            </div>
+            <div
+              class="masonry-item relative group gallery-item"
+              data-theme="performance"
+            >
+              <img
+                src="assets/gallery/g1.JPEG"
+                alt="ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା"
+                class="w-full rounded-lg shadow-md cursor-pointer"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                
+              </div>
+            </div>
+            <div
+              class="masonry-item relative group gallery-item"
+              data-theme="performance"
+            >
+              <img
+                src="assets/gallery/g11.jpg"
+                alt="ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା"
+                class="w-full rounded-lg shadow-md cursor-pointer"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+               
+              </div>
+            </div>
+            <div
+              class="masonry-item relative group gallery-item"
+              data-theme="behind"
+            >
+              <img
+                src="assets/gallery/g16.JPEG"
+                alt="ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା"
+                class="w-full rounded-lg shadow-md cursor-pointer"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                
+              </div>
+            </div>
+            <div
+              class="masonry-item relative group gallery-item"
+              data-theme="performance"
+            >
+              <img
+                src="assets/gallery/g19.jpg"
+                alt="ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା"
+                class="w-full rounded-lg shadow-md cursor-pointer"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                
+              </div>
+            </div>
+            <div
+              class="masonry-item relative group gallery-item"
+              data-theme="behind"
+            >
+              <img
+                src="assets/gallery/ratha5.jpeg"
+                alt="ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା"
+                class="w-full rounded-lg shadow-md cursor-pointer"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                
+              </div>
+            </div>
+            <div
+              class="masonry-item relative group gallery-item"
+              data-theme="behind"
+            >
+              <img
+                src="assets/gallery/g20.jpg"
+                alt="ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା"
+                class="w-full rounded-lg shadow-md cursor-pointer"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a
+              href="gallery.html"
+              class="bg-purple-700 hover:bg-purple-600 border border-gray-300 text-white font-medium py-3 px-8 rounded-lg transition duration-300"
+            >
+              ଗ୍ୟାଲେରୀ ବ୍ରାଉଜ୍ କରନ୍ତୁ
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <button
+        id="back-to-top"
+        class="fixed bottom-4 right-4 bg-purple-700 text-white p-3 rounded-full shadow-lg hover:bg-purple-600 transition duration-300 hidden"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </button>
+
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 text-gray-300 py-12"
+    >
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <div class="md:col-span-4">
+            <a href="index.html">
+              <div class="flex flex-col items-center mb-4">
+                <div
+                  class="w-10 h-10 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-dragon text-white text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mt-3">
+                  ତୋରସିଂହ
+                </h3>
+              </div>
+            </a>
+            <p class="mb-6 max-w-md mx-auto">
+              ଏହି ୱେବସାଇଟ ଟି ତିଆରି କରିବାର ଉଦ୍ଧେଶ୍ୟ ହେଲା ଆମ ଗ୍ରାମର ସବୁ ଖବର ଏବଂ
+              ଯୁବପିଢିଙ୍କ ଭିତରେ ଶିକ୍ଷା କୁ ପ୍ରୋତ୍ସାହନ ଦବାପାଇଁ | ଆପଣ ମାନେ ଆମ ଗ୍ରାମର
+              ଉନ୍ନତି ପାଇଁ ଆଗେଇ ଆସନ୍ତୁ | ଏହା ଦ୍ୱାରା ଆମେ ଡିଜିଟାଲ ହେବା ଏବଂ ଏକ
+              ଶ୍ରେଷ୍ଠ ଗ୍ରାମରେ ପରିଣତ ହେବା | ଅନ୍ୟ ମାନକୁ ପ୍ରେରିତ କରିବା ଡିଜିଟାଲ
+              ହେବାରେ | ଜୟ ଜଗନ୍ନାଥ 🙏
+            </p>
+            <div class="flex justify-center space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-facebook-f text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-youtube text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+          <p>
+            &copy; 2025 ତୋରସିଂହ କ୍ଲବ. All rights reserved | By
+            <a href="https://rajeshbhola.github.io"><u>ରାଜେଶ ଭୋଳ</u></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+         // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
             });
-        }); 
+
+             // Navigation active state
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    document.querySelectorAll('.nav-item').forEach(i => {
+                        i.classList.remove('nav-active');
+                    });
+                    this.classList.add('nav-active');
+                    
+                    // Close mobile menu after click
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+             // Show/hide the button on scroll
+  window.addEventListener("scroll", function () {
+    const backToTop = document.getElementById("back-to-top");
+    if (window.scrollY > 300) {
+      backToTop.classList.remove("hidden");
+    } else {
+      backToTop.classList.add("hidden");
+    }
+  });
+
+  // Scroll to top when clicked
+  document.getElementById("back-to-top").addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+    
+
     </script>
 
-    </body>
-
-  </html>
+  </body>
+</html>

@@ -1,162 +1,229 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-        <title>Gallery</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-    
-        <script>
-          $(document).ready(function () {
-            $(".button-collapse").sideNav();
-          });
-        </script>
-    </head>
-    <body bgcolor="#F9F2ED">
-       <div class="navbar-fixed">
-          <nav>
-              <div class="nav-wrapper">
-                 <a href="index.html"><img class="brand-logo" src="img/tiger.png" alt="" /></a>
-                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                 <ul class="right hide-on-med-and-down">
-                    <li><a  href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="festivals.html">Festivals</a></li>
-                    <li><a href="jatra.html">Jatra</a></li>
-                    <li class="active"><a href="videos.html">Videos</a></li>
-                </ul>
-             </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ତୋରସିଂହ | Videos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Yatra One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 shadow-md z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <a href="index.html">
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <i class="fa-solid fa-dragon text-white text-3xl"></i>
+              </div>
+              <h1 class="text-xl font-bold ml-3 text-white">ତୋରସିଂହ</h1>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="index.html#hero"
+              class="text-white hover:text-primary font-medium nav-item"
+              >ଘର</a
+            >
+            <a
+              href="index.html#festivals"
+              class="text-white hover:text-primary font-medium nav-item"
+              >ଜାତ୍ରା ଓ ପର୍ବ</a
+            >
+
+            <a
+              href="index.html#drama-people"
+              class="text-white hover:text-primary font-medium nav-item"
+              >କଳାକାର</a
+            >
+            <a
+              href="index.html#gallery"
+              class="text-white hover:text-primary font-medium nav-item"
+              >ଗ୍ୟାଲେରୀ</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:text-primary font-medium nav-item"
+              >ଗାଁ ବିଷୟରେ</a
+            >
+
+            
           </nav>
-       </div>
-       <ul class="side-nav" id="mobile-demo">
-        <li><a  href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="festivals.html">Festivals</a></li>
-        <li><a href="jatra.html">Jatra</a></li>
-        <li class="active"><a href="videos.html">Videos</a></li>
-      </ul>
 
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden text-white">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
 
-      <div class="card-panel darken-4">
-          <h1 class="header">Jatra Videos</h1>
-      </div><br>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t py-4">
+        <div class="container mx-auto px-4 flex flex-col space-y-3">
+          <a
+            href="index.html#hero"
+            class="text-gray-600 hover:text-primary font-medium py-2 nav-item"
+            >ଘର</a
+          >
+          <a
+              href="index.html#festivals"
+              class="text-gray-600 hover:text-primary font-medium nav-item"
+              >ଜାତ୍ରା ଓ ପର୍ବ</a
+            >
 
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 col-sm-12">
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v1.mp4" type="video/mp4">
-        </video>
+          <a
+            href="index.html#drama-people"
+            class="text-gray-600 hover:text-primary font-medium py-2 nav-item"
+            >କଳାକାର</a
+          >
+          <a
+            href="index.html#gallery"
+            class="text-gray-600 hover:text-primary font-medium py-2 nav-item"
+            >ଗ୍ୟାଲେରୀ</a
+          >
+          <a
+            href="about.html"
+            class="text-gray-600 hover:text-primary font-medium py-2 nav-item"
+            >ଗାଁ ବିଷୟରେ</a
+          >
+          
+        </div>
+      </div>
+    </header>
 
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v2.mp4" type="video/mp4">
-        </video>
+    <!-- Main Content -->
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section id="hero" class="hero-pattern py-16 md:py-24">
+        <div class="container mx-auto px-4">
+          <div class="max-w-3xl mx-auto text-center">
+            
+            <span style="font-size: 50px; background: linear-gradient(90deg, #8B5FBF, #64acef); -webkit-background-clip: text; -webkit-text-fill-color: transparent;font-weight: bold;">ଭିଡିଓଗୁଡିକ</span>
+           
+        
+          </div>
+        </div>
+      </section>
 
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v3.mp4" type="video/mp4">
-        </video>
+      <!-- Festivals Section -->
+      <section id="festivals" class="py-16 bg-white">
+        <div class="container mx-auto px-4">  
 
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v4.mp4" type="video/mp4">
-        </video>
+          <!-- Video Grid -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            id="video-grid"
+          >
+            <!-- Videos will be dynamically populated -->
+          </div>
 
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v5.mp4" type="video/mp4">
-        </video>
+          
+        </div>
+      </section>
 
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v6.mp4" type="video/mp4">
-        </video>
+      <button
+      id="back-to-top"
+      class="fixed bottom-4 right-4 bg-purple-700 text-white p-3 rounded-full shadow-lg hover:bg-purple-600 transition duration-300 hidden"
+    ><i class="fas fa-chevron-up"></i>
+    </button>
+    </main>
 
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v7.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v8.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v9.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v10.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v11.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v12.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v13.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls poster="img/jatra.jpg">
-            <source src="videos/v14.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls  poster="img/suliadevi.png">
-          <source src="videos/v15.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls  poster="img/suliadevi.png">
-          <source src="videos/v16.mp4" type="video/mp4">
-        </video>
-
-        <video width="300" height="240" controls>
-          <source src="videos/jagannath.mp4" type="video/mp4">
-        </video>
-
-    </div>
-    </div>
-    </div>
-
-
-   
-    
-
-      <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l12 s12">
-              <a href=""><img class="brand-logo responsive-img" src="img/tiger.png" alt="" /></a>
-              <h5 class="f-header">Torasingh Rock Star</h5><br>
-              <p class="grey-text text-lighten-4 f-para">
-                ଏହି ୱେବ୍ସାଇଟ ଟି ତିଆରି କରିବାର ଉଦ୍ଧେଶ୍ୟ ହେଲା ଆମ ଗ୍ରାମର ସବୁ ଖବର ଏବଂ ଯୁବପିଢିଙ୍କ ଭିତରେ ଶିକ୍ଷା କୁ ପ୍ରୋତ୍ସାହନ ଦବାପାଇଁ |
-                ଆପଣ ମାନେ ଆମ ଗ୍ରାମର ଉନ୍ନତି ପାଇଁ ଆଗେଇ ଆସନ୍ତୁ |  ଏହା  ଦ୍ୱାରା ଆମେ ଡିଜିଟାଲ ହେବା ଏବଂ ଏକ ଶ୍ରେଷ୍ଠ ଗ୍ରାମରେ ପରିଣତ ହେବା |
-                ଅନ୍ୟ ମାନକୁ ପ୍ରେରିତ କରିବା ଡିଜିଟାଲ ହେବାରେ |
-              </p><br>
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 text-gray-300 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <div class="md:col-span-4">
+            <a href="index.html">
+                <div class="flex flex-col items-center mb-4">
+              <div
+                class="w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <i class="fa-solid fa-dragon text-white text-3xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mt-3">
+                ତୋରସିଂହ
+              </h3>
+            </div>
+            </a>
+            <p class="mb-6 max-w-md mx-auto">
+              ଏହି ୱେବସାଇଟ ଟି ତିଆରି କରିବାର ଉଦ୍ଧେଶ୍ୟ ହେଲା ଆମ ଗ୍ରାମର ସବୁ ଖବର ଏବଂ ଯୁବପିଢିଙ୍କ ଭିତରେ ଶିକ୍ଷା କୁ ପ୍ରୋତ୍ସାହନ ଦବାପାଇଁ | ଆପଣ ମାନେ ଆମ ଗ୍ରାମର ଉନ୍ନତି ପାଇଁ ଆଗେଇ ଆସନ୍ତୁ | ଏହା ଦ୍ୱାରା ଆମେ ଡିଜିଟାଲ ହେବା ଏବଂ ଏକ ଶ୍ରେଷ୍ଠ ଗ୍ରାମରେ ପରିଣତ ହେବା | ଅନ୍ୟ ମାନକୁ ପ୍ରେରିତ କରିବା ଡିଜିଟାଲ ହେବାରେ | ଜୟ ଜଗନ୍ନାଥ 🙏
+            </p>
+            <div class="flex justify-center space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-facebook-f text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-youtube text-xl"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-            2022 | Copy &copy; Rights Reserved By | <span style="color:rgb(255, 230, 1)">ତୋରସିଂହ କ୍ଲବ </span> 
-          <a class="grey-text text-lighten-4 right" href="#!">Developed By | <span style="color:rgb(255, 230, 1)">ରାଜେଶ ଭୋଳ</span></a>
+
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+          <p>&copy; 2025 ତୋରସିଂହ କ୍ଲବ. All rights reserved | By <a href="https://rajeshbhola.github.io"><u>ରାଜେଶ ଭୋଳ</u></a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div
+      id="video-modal"
+      class="fixed inset-0 bg-black z-50 hidden items-center justify-center p-4"
+    >
+      <div class="w-full max-w-4xl">
+        <div class="relative">
+          <button
+            id="close-video"
+            class="absolute -top-13 right-0 text-white text-2xl z-50"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div
+            class="aspect-video w-full rounded-lg overflow-hidden"
+          >
+            <iframe
+              id="video-player"
+              class="w-full h-full"
+              src=""
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="bg-white p-4 rounded-b-lg">
+            <h3 id="video-title" class="text-xl font-bold text-dark mb-2"></h3>
+           
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <script src="assets/js/festivals.js"></script>
+    <script src="assets/js/videos.js"></script>
 
 
-      <script type="text/javascript" language="javascript">
-        $(document).ready(function() {
-            $(document).bind("contextmenu",function(e) {
-               return false;
-            });
-        }); 
-    </script>
-
-    </body>
-
-  </html>
+  </body>
+</html>
