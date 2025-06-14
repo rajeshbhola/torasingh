@@ -75,6 +75,29 @@
             videoModal.classList.remove('hidden');
             videoModal.classList.add('flex');
             document.body.classList.add('overflow-hidden');
+
+           const correctPassword = "torasingh2025"; // Change this to your desired password
+            const userPassword = prompt("Enter password to play this video:");
+
+            if (userPassword === correctPassword) {
+                videoPlayer.src = video.videoUrl;
+                videoTitle.textContent = video.title;
+                videoModal.classList.remove('hidden');
+                videoModal.classList.add('flex');
+                document.body.classList.add('overflow-hidden');
+            } else if (userPassword !== null) {
+                alert("Incorrect password. Access denied.");
+                videoPlayer.src = '';
+                videoModal.classList.add('hidden');
+                videoModal.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            } else {
+                // User pressed Cancel
+                videoPlayer.src = '';
+                videoModal.classList.add('hidden');
+                videoModal.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            }
         }
 
     

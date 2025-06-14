@@ -41,27 +41,27 @@ const images = [
                 url: 'assets/images/6.jpg',
                 theme: 'behind'
             },
-            {
-                id: 'img-007',
-                title: 'ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା',
-                description: 'Artists preparing for a traditional dance performance',
-                url: 'assets/images/7.jpg',
-                theme: 'behind'
-            },
-            {
-                id: 'img-008',
-                title: 'ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା',
-                description: 'Traditional dance performance at Konark Festival 2024',
-                url: 'assets/images/8.jpg',
-                theme: 'performance'
-            },
-            {
-                id: 'img-009',
-                title: 'ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା',
-                description: 'Traditional orchestra performing at cultural festival',
-                url: 'assets/images/9.jpg',
-                theme: 'performance'
-            },
+            // {
+            //     id: 'img-007',
+            //     title: 'ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା',
+            //     description: 'Artists preparing for a traditional dance performance',
+            //     url: 'assets/images/7.jpg',
+            //     theme: 'behind'
+            // },
+            // {
+            //     id: 'img-008',
+            //     title: 'ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା',
+            //     description: 'Traditional dance performance at Konark Festival 2024',
+            //     url: 'assets/images/8.jpg',
+            //     theme: 'performance'
+            // },
+            // {
+            //     id: 'img-009',
+            //     title: 'ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା',
+            //     description: 'Traditional orchestra performing at cultural festival',
+            //     url: 'assets/images/9.jpg',
+            //     theme: 'performance'
+            // },
             {
                 id: 'img-010',
                 title: 'ଚିତ୍ରାଙ୍କନ ପ୍ରତିଯୋଗିତା',
