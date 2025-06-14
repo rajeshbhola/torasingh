@@ -76,7 +76,11 @@
             videoModal.classList.add('flex');
             document.body.classList.add('overflow-hidden');
 
-           const correctPassword = "torasingh2025"; // Change this to your desired password
+           // Encoded password (Base64 of "torasingh2025")
+            const encodedPassword = "cm9ja3N0YXIyMDI1";
+            // Decode at runtime
+            const correctPassword = atob(encodedPassword);
+
             const userPassword = prompt("Enter password to play this video:");
 
             if (userPassword === correctPassword) {
